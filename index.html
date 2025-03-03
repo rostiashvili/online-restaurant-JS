@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restaurant</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="header-row">
+                <a href="./index.html" class="header-name">The Restaurant <i class="fa-solid fa-utensils"></i></a>
+                <div class="header-mini-row">
+                    <a href="./cart.html" class="header-mini-row">
+                    <i class="fa-solid fa-cart-shopping icon"></i>
+                    <div class="cart-count-circle" id="cartItemNumber"></div>
+                </a>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="section-one">
+            <div class="section-one-content">
+              <span  class="section-one-big-text">Welcome to <br> Our Restaurant</span>
+              <p class="section-one-text">Enjoy delicious meals with a great atmosphere!</p>
+              <button class="section-one-button" id="scrollButton">Explore Menu</button>
+            </div>
+          </div>
+    </section>
+
+    <section class="section-two">
+        <div class="section-two-row" id="rowForFilter">
+            <div class="filterting" onclick="abort()">All</div>
+        </div>
+    </section>
+
+    <section>
+    <div class="section-three-row" id="targetSection">
+        <div class="slider-container">
+            <h2 class="h2-center">Filter <i class="fa-solid fa-filter"></i></h2>
+            <input type="range" min="-1" max="4" value="-1" id="slider">
+            <div class="value-display">spice: <span id="sliderValue">Not Chosen</span></div>
+            <h2>Choose Your Preferences</h2>
+            <div class="checkbox-container">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="vegetarian">
+                    <span class="custom-checkbox"></span> <span class="custom-text">Vegetarian</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="nuts">
+                    <span class="custom-checkbox"></span> <span class="custom-text">Nuts</span>
+                </label>
+            </div>
+            <div class="arrange">
+            <button onclick="applyFilters(allproducts)" class="filterButton">Apply</button>
+            <button onclick="abort()" class="filterButton">Reset</button>
+        </div>
+        </div>
+
+        <div class="section-three-column" id="card-area">
+            
+            
+
+
+
+        </div>
+
+    </div>
+    </section>
+    
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+.section-three {
+    margin-top: 300px;
+}
+
+body{
+    min-height: 900px;
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid rgb(126, 115, 115);
+    margin: auto;
+    width: 90%;
+    max-width: 1000px; 
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+
+th {
+    color: white;
+    border: 1px solid rgb(99, 35, 35);
+    border-bottom: 3px solid #555;
+    background-color: rgb(99, 35, 35);
+}
+
+
+td {
+    font-size: 16px;
+    border-top: 1px solid black;
+}
+
+
+.delete {
+    background-color: brown;
+    font-size: large;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(131, 56, 56);
+    transition-duration: 0.3s;
+    color: white;
+}
+
+
+img {
+    width: 100px;
+}
+
+
+.product-td {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.change-value {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(99, 35, 35);
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.change-value:hover {
+    background-color: rgb(128, 57, 57);
+    transition-duration: 0.4s;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .section-three {
+        margin-top: 340px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .product-td {
+        gap: 5px;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    .change-value {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .delete {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+    .quantity-cell {
+        white-space: nowrap;
+    }
+}
